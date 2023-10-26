@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import Card from "react-bootstrap/Card";
 import Badge from "react-bootstrap/Badge";
 import Button from "react-bootstrap/Button";
+import "./Menu.css";
+import Navbar2 from "../Navbar/Navbar2";
 const Menu = () => {
   const [data, setData] = useState([]);
   const addCart = (id) => {
@@ -47,6 +49,7 @@ const Menu = () => {
   }, []);
   return (
     <div>
+      <Navbar2 />
       <div className="menu">
         {data.map((x) => {
           return (
